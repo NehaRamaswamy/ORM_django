@@ -14,3 +14,6 @@ class Ticket(models.Model):
     seat_number = models.CharField(max_length=10)    
     price = models.DecimalField(max_digits=6,decimal_places=2)
     c_name = models.CharField()
+
+    def __str__(self):
+        return self.c_name

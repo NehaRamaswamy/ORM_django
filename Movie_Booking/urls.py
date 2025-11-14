@@ -17,7 +17,9 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
-
+from Booking.views import *
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path('insert_movie/',insert_movie,name='insert_movie'),
+    path('insert_booking/',insert_booking,name='insert_booking'),
 ]
